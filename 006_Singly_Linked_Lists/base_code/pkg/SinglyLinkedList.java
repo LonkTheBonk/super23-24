@@ -18,14 +18,28 @@ public class SinglyLinkedList {
 	   	If the position doesn't exist, it returns -1
 	*/ 
 	public int get(int pos){
-
+		Node temp = head;
+		
+		for(int i = 0; i < pos-1; ++1)
+			temp = temp.getNext()
+		
+		return temp.getData();
 	}
 
 	/*
 		Insert a new Node at the given position with the data given
 	*/
-	public void insert(int pos int data){
+	public void insert(int pos, int data){
+		Node temp = new Node(data);
+		Node list = this.head;
+		Node add = null;
 
+		if(list != null)
+			add = list.getNext();
+
+		if(head == null)
+			head = temp;
+		else if(pos == 0)
 	}
 
 	/*
@@ -47,6 +61,10 @@ public class SinglyLinkedList {
 		Print all data values in the LinkedList 
 	*/
 	public void printList(){
-
+		Node temp = head;
+		
 	}
+
+	//private int length(Node insert){
+		
 }
